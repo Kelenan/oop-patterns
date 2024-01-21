@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class PictureComparator {
-    private final String DIR = "src/patterns/wrappers/proxy/pictures";
+    private final String DIR = "src/patterns/structural/wrappers/proxy/pictures";
 
     public boolean arePictureEqual(String path)  {
         try {

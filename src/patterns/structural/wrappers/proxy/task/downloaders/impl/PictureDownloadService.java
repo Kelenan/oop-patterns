@@ -9,9 +9,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
-public class PictureDownloadService {
+public class PictureDownloadService implements Proxyable{
     private final String PREFIX = "https://w.forfun.com/fetch/";
-    private final PictureComparator comparator = new PictureComparator();
+
 
     public void download(String path, String filename) {
         if (invalid(path)) throw new IllegalArgumentException("Invalid url. Url must started at" + PREFIX);

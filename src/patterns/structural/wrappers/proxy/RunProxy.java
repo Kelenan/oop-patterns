@@ -1,5 +1,7 @@
 package patterns.structural.wrappers.proxy;
 import patterns.structural.wrappers.proxy.task.downloaders.impl.PictureDownloadService;
+import patterns.structural.wrappers.proxy.task.downloaders.impl.PictureDownloadServiceProxy;
+import patterns.structural.wrappers.proxy.task.downloaders.impl.Proxyable;
 import patterns.structural.wrappers.proxy.task.downloaders.view.View;
 
 /**
@@ -12,7 +14,7 @@ public class RunProxy {
         //https://w.forfun.com/fetch/6d/6d926bd8dd61460a0010cefd8eda659c.jpeg?h=900&r=0.5
         //https://w.forfun.com/fetch/94/94c56e15f13f1de4740a76742b0b594f.jpeg?h=450&r=0.5
 
-        PictureDownloadService service = new PictureDownloadService();
+        Proxyable service = new PictureDownloadServiceProxy();
         View view = new View();
         view.run(service);
 

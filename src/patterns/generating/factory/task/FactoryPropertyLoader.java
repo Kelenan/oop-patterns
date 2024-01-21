@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class FactoryPropertyLoader {
-    private static final String PATH_TO_PROPERTY = "src/patterns/factory/resources/application.property";
+    private static final String PATH_TO_PROPERTY = "src/patterns/generating/factory/resources/application.property";
     private static final Map<String, String> settings = new TreeMap<>();
     private static Properties properties;
 

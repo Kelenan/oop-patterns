@@ -1,11 +1,13 @@
-package patterns.behavioral.pubsub.task.pubsub;
+package patterns.behavioral.pubsub.task.pubsub.impl.event;
+
+import patterns.behavioral.pubsub.task.pubsub.Event;
 
 import java.time.LocalDateTime;
 
 /**
   Description object of video (model)
  */
-public class Video {
+public class Video implements Event<Video> {
     private final LocalDateTime startTime;
     private final String name;
     private final int duration;
@@ -18,5 +20,10 @@ public class Video {
 
     public int getDuration() {
         return duration;
+    }
+
+    @Override
+    public Video appear() {
+        return this;
     }
 }
